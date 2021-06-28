@@ -11,8 +11,6 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [My process](#my-process)
   - [Built with](#built-with)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -37,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://abhishek9760.github.io/TODO-WebApp/)
 
 ## My process
 
@@ -47,5 +45,3 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
