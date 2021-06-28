@@ -80,7 +80,7 @@
     opacity: 0;
     height: 1.5rem;
     width: 1.5rem;
-    background-image: url("images/icon-cross.svg");
+    background-image: url("./images/icon-cross.svg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -106,7 +106,7 @@
       class:dark-list-bg={theme === "dark" && !todo.completed}
     >
       {#if todo.completed}
-        <img src="/images/icon-check.svg" alt="" />{/if}
+        <img src="./images/icon-check.svg" alt="" />{/if}
     </div>
   </span>
   <p class:completed={todo.completed}>{todo.text}</p>
