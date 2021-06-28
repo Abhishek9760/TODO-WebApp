@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+/* 
+- Very Light Gray: hsl(0, 0%, 98%)
+- Very Light Grayish Blue: hsl(236, 33%, 92%)
+- Light Grayish Blue: hsl(233, 11%, 84%)
+- Dark Grayish Blue: hsl(236, 9%, 61%)
+- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+
+- Very Dark Blue: hsl(235, 21%, 11%)
+- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
+- Light Grayish Blue: hsl(234, 39%, 85%)
+- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Dark Grayish Blue: hsl(234, 11%, 52%)
+- Very Dark Grayish Blue: hsl(233, 14%, 35%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%) */
+
+  --bg-dark:hsl(235, 21%, 11%) ;
+  --bg-light:hsl(0, 0%, 98%) ;
+
+  --input-bg-dark: #25273c;
+  --input-bg-light: #ffffff;
+
+  --input-text-light: #c5c7df;
+  --input-text-dark: #434247;
+
+  --bright-blue: hsl(220, 98%, 61%);
+  --greyesh-blue-1: hsl(235, 19%, 35%);
+
+  --grey-1: hsl(234, 39%, 85%);
+
+  --gradient-1: hsl(192, 100%, 67%);
+  --gradient-2: hsl(280, 87%, 65%);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-list-bg {
+  background-color: var(--input-bg-light);
+}
+.dark-list-bg {
+  background-color: var(--input-bg-dark);
+}
+.light-text {
+  color: var(--input-text-dark);
+}
+.dark-text {
+  color: var(--input-text-light);
+}
+
+.footer-text-light > p:hover {
+  color:hsl(236, 33%, 92%);
+  cursor: pointer;
+}
+
+.footer-text-dark > p:hover {
+  color: hsl(235, 19%, 35%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 90%;
+  }
+}
