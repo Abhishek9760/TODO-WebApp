@@ -27,7 +27,7 @@
   }
 
   function addTodo(event) {
-    if (event.which !== 13) {
+    if (event.which !== 13 || todoText.trim().length === 0) {
       return;
     }
     let newTodo = {

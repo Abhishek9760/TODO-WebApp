@@ -2120,7 +2120,7 @@ var app = (function () {
     			t = space();
     			create_component(input.$$.fragment);
     			attr_dev(main, "class", "svelte-n3t67q");
-    			add_location(main, file$7, 110, 4, 2425);
+    			add_location(main, file$7, 110, 4, 2457);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
@@ -2281,7 +2281,7 @@ var app = (function () {
     			attr_dev(div, "class", "root svelte-n3t67q");
     			toggle_class(div, "light-bg", /*theme*/ ctx[1] === "light");
     			toggle_class(div, "dark-bg", /*theme*/ ctx[1] === "dark");
-    			add_location(div, file$7, 104, 0, 2302);
+    			add_location(div, file$7, 104, 0, 2334);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2385,7 +2385,7 @@ var app = (function () {
     	}
 
     	function addTodo(event) {
-    		if (event.which !== 13) {
+    		if (event.which !== 13 || todoText.trim().length === 0) {
     			return;
     		}
 
