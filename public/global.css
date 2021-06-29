@@ -9,22 +9,6 @@
 
 html {
   height: 100%;
-  width: 100%;
-/* 
-- Very Light Gray: hsl(0, 0%, 98%)
-- Very Light Grayish Blue: hsl(236, 33%, 92%)
-- Light Grayish Blue: hsl(233, 11%, 84%)
-- Dark Grayish Blue: hsl(236, 9%, 61%)
-- Very Dark Grayish Blue: hsl(235, 19%, 35%)
-
-- Very Dark Blue: hsl(235, 21%, 11%)
-- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
-- Light Grayish Blue: hsl(234, 39%, 85%)
-- Light Grayish Blue (hover): hsl(236, 33%, 92%)
-- Dark Grayish Blue: hsl(234, 11%, 52%)
-- Very Dark Grayish Blue: hsl(233, 14%, 35%)
-- Very Dark Grayish Blue: hsl(237, 14%, 26%) */
-
   --bg-dark:hsl(235, 21%, 11%) ;
   --bg-light:hsl(0, 0%, 98%) ;
 
@@ -51,6 +35,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .light-list-bg {
@@ -76,12 +61,17 @@ body {
   cursor: pointer;
 }
 
+  .dark-bg {
+    background-color: var(--bg-dark);
+  }
+
+  .light-bg {
+    background-color: var(--bg-light);
+  }
+
+
 @media only screen and (max-width: 500px) {
   html {
     font-size: 90%;
-  }
-
-  ul {
-    max-height: 300px;
   }
 }

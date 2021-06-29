@@ -55,11 +55,11 @@
     transform: translateX(80%);
   }
 
-  @media only screen and (max-height: 700px) and (max-width: 767px) {
+  /* @media only screen and (max-height: 700px) and (max-width: 767px) {
     span {
       height: 30%;
     }
-  }
+  } */
 </style>
 
 <span>

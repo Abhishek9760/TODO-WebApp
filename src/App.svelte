@@ -70,8 +70,6 @@
     }
   }
 
-  // let myTodoList = [];
-
   $: myTodoList = getList(state, todos);
 </script>
 
@@ -79,16 +77,9 @@
   .root {
     height: 100%;
     width: 100%;
+    overflow-y: auto;
+    padding-bottom: 50px;
   }
-
-  .dark-bg {
-    background-color: var(--bg-dark);
-  }
-
-  .light-bg {
-    background-color: var(--bg-light);
-  }
-
   main {
     display: flex;
     flex-direction: column;

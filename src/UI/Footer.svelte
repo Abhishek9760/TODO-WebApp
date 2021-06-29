@@ -25,7 +25,7 @@
       position: absolute;
       bottom: -65px;
       left: 0;
-      padding: 20px;
+      padding: 15px;
       width: 100%;
       justify-content: space-around;
       align-items: center;
@@ -43,6 +43,12 @@
 
   .active {
     color: var(--bright-blue);
+  }
+
+  @media only screen and (max-width: 500px) {
+    li {
+      padding: 15px;
+    }
   }
 </style>
 

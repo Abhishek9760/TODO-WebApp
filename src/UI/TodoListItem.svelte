@@ -92,6 +92,11 @@
     margin-left: 15px;
     font-size: 1rem;
   }
+  @media only screen and (max-width: 500px) {
+    li {
+      padding: 15px;
+    }
+  }
 </style>
 
 <li>
