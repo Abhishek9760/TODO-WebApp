@@ -16,24 +16,6 @@
     overflow-y: auto;
     max-height: 350px;
   }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-
-  ::-webkit-scrollbar-track {
-    border: 1px solid var(--grey-1);
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(
-      -45deg,
-      var(--gradient-1),
-      var(--gradient-2)
-    );
-    border-radius: 10px;
-  }
 </style>
 
 <ul

@@ -1512,7 +1512,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (46:2) {#each todos as todo, index (todo.id)}
+    // (28:2) {#each todos as todo, index (todo.id)}
     function create_each_block(key_1, ctx) {
     	let first;
     	let todolistitem;
@@ -1568,7 +1568,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(46:2) {#each todos as todo, index (todo.id)}",
+    		source: "(28:2) {#each todos as todo, index (todo.id)}",
     		ctx
     	});
 
@@ -1599,12 +1599,12 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(ul, "class", "list svelte-xz4l1r");
+    			attr_dev(ul, "class", "list svelte-12gpl9");
     			toggle_class(ul, "light-list-bg", /*theme*/ ctx[0] === "light");
     			toggle_class(ul, "dark-list-bg", /*theme*/ ctx[0] === "dark");
     			toggle_class(ul, "light-text", /*theme*/ ctx[0] === "light");
     			toggle_class(ul, "dark-text", /*theme*/ ctx[0] === "dark");
-    			add_location(ul, file$5, 38, 0, 700);
+    			add_location(ul, file$5, 20, 0, 370);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
