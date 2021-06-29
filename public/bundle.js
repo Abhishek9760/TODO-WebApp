@@ -1017,12 +1017,12 @@ var app = (function () {
     			div0 = element("div");
     			t = space();
     			input = element("input");
-    			attr_dev(div0, "class", "front svelte-xfji56");
-    			add_location(div0, file$2, 69, 4, 1396);
-    			attr_dev(div1, "class", "svelte-xfji56");
+    			attr_dev(div0, "class", "front svelte-1bgiaac");
+    			add_location(div0, file$2, 68, 4, 1378);
+    			attr_dev(div1, "class", "svelte-1bgiaac");
     			toggle_class(div1, "light-input-bg", /*theme*/ ctx[0] === "light");
     			toggle_class(div1, "dark-input-bg", /*theme*/ ctx[0] === "dark");
-    			add_location(div1, file$2, 65, 2, 1291);
+    			add_location(div1, file$2, 64, 2, 1273);
     			attr_dev(input, "autocomplete", "off");
     			attr_dev(input, "autocapitalize", "off");
     			input.value = /*value*/ ctx[1];
@@ -1030,12 +1030,12 @@ var app = (function () {
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "");
     			attr_dev(input, "id", "");
-    			attr_dev(input, "class", "svelte-xfji56");
+    			attr_dev(input, "class", "svelte-1bgiaac");
     			toggle_class(input, "light-input-bg", /*theme*/ ctx[0] === "light");
     			toggle_class(input, "dark-input-bg", /*theme*/ ctx[0] === "dark");
-    			add_location(input, file$2, 71, 2, 1431);
-    			attr_dev(span, "class", "svelte-xfji56");
-    			add_location(span, file$2, 64, 0, 1281);
+    			add_location(input, file$2, 70, 2, 1413);
+    			attr_dev(span, "class", "svelte-1bgiaac");
+    			add_location(span, file$2, 63, 0, 1263);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2119,7 +2119,7 @@ var app = (function () {
     			create_component(heading.$$.fragment);
     			t = space();
     			create_component(input.$$.fragment);
-    			attr_dev(main, "class", "svelte-evxn34");
+    			attr_dev(main, "class", "svelte-n3t67q");
     			add_location(main, file$7, 110, 4, 2425);
     		},
     		m: function mount(target, anchor) {
@@ -2278,7 +2278,7 @@ var app = (function () {
     			create_component(header.$$.fragment);
     			t = space();
     			create_component(card.$$.fragment);
-    			attr_dev(div, "class", "root svelte-evxn34");
+    			attr_dev(div, "class", "root svelte-n3t67q");
     			toggle_class(div, "light-bg", /*theme*/ ctx[1] === "light");
     			toggle_class(div, "dark-bg", /*theme*/ ctx[1] === "dark");
     			add_location(div, file$7, 104, 0, 2302);

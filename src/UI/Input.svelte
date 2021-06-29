@@ -30,7 +30,6 @@
   }
 
   span {
-    height: 20%;
     display: flex;
     align-self: normal;
     align-items: center;
@@ -38,7 +37,7 @@
   }
 
   span div {
-    height: 100%;
+    height: 50px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     display: flex;

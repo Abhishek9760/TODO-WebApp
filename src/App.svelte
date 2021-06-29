@@ -87,7 +87,7 @@
     margin: auto;
     align-items: center;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
   }
 
