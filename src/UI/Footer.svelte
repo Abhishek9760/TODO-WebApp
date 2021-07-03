@@ -44,12 +44,6 @@
   .active {
     color: var(--bright-blue);
   }
-
-  @media only screen and (max-width: 500px) {
-    li {
-      padding: 15px;
-    }
-  }
 </style>
 
 <footer

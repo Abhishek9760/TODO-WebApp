@@ -1,8 +1,9 @@
 <script>
+  import { scale } from "svelte/transition";
+  import { flip } from "svelte/animate";
   import TodoListItem from "./TodoListItem.svelte";
   export let theme;
   export let todos;
-  export let deleteTodo;
 </script>
 
 <style>
@@ -15,6 +16,7 @@
     padding: 0;
     overflow-y: auto;
     max-height: 350px;
+    overflow-x: hidden;
   }
 </style>
 
@@ -25,12 +27,9 @@
   class:light-text={theme === "light"}
   class:dark-text={theme === "dark"}
 >
-  {#each todos as todo, index (todo.id)}
-    <TodoListItem
-      on:completed
-      on:tododelete={(e) => deleteTodo(e.detail)}
-      {theme}
-      {todo}
-    />
+  {#each todos as todo (todo.id)}
+    <div transition:scale animate:flip={{ duration: 300 }}>
+      <TodoListItem on:completed {theme} {todo} />
+    </div>
   {/each}
 </ul>

@@ -1,10 +1,9 @@
 <script>
-  import { createEventDispatcher } from "svelte";
+  import { scale, fade } from "svelte/transition";
+  import todos from "../todos-store";
 
   export let todo;
   export let theme;
-
-  const dispatch = createEventDispatcher();
 </script>
 
 <style>
@@ -54,6 +53,8 @@
     height: 100%;
     width: 100%;
     border-radius: inherit;
+    display: grid;
+    place-items: center;
   }
 
   img {
@@ -67,8 +68,6 @@
       var(--gradient-1),
       var(--gradient-2)
     );
-    display: grid;
-    place-items: center;
   }
 
   .completed {
@@ -103,7 +102,7 @@
   <span
     class="add"
     class:border={!todo.completed}
-    on:click={() => dispatch("completed", todo.id)}
+    on:click={() => todos.toggleCompleted(todo.id)}
   >
     <div
       class:tick={todo.completed}
@@ -111,9 +110,13 @@
       class:dark-list-bg={theme === "dark" && !todo.completed}
     >
       {#if todo.completed}
-        <img src="./images/icon-check.svg" alt="" />{/if}
+        <img
+          transition:scale={{ duration: 100 }}
+          src="./images/icon-check.svg"
+          alt=""
+        />{/if}
     </div>
   </span>
   <p class:completed={todo.completed}>{todo.text}</p>
-  <span class="remove" on:click={() => dispatch("tododelete", todo.id)} />
+  <span class="remove" on:click={() => todos.delete(todo.id)} />
 </li>
