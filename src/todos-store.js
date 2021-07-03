@@ -4,6 +4,10 @@ let todosList = writable([
   { text: "Gym at morning after 11.", id: 1, completed: true },
   { text: "Breakfast at 11:30", id: 2, completed: false },
   { text: "Study at 1pm", id: 3, completed: false },
+  { text: "Play Cricket", id: 4, completed: false },
+  { text: "Play Football", id: 5, completed: false },
+  { text: "Watching TV", id: 6, completed: false },
+  { text: "PUBG", id: 7, completed: false },
 ]);
 
 const customTodos = {
